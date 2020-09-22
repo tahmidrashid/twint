@@ -70,6 +70,7 @@ timestamps, fav-rt counts does not return with this page but it is the best opti
 
 example
 
+```
 c = twint.Config()
 c.Search = "yey"
 c.Store_object = True
@@ -77,6 +78,7 @@ c.Limit = 100
 twint.run.Search(c)
 tlist = c.search_tweet_list
 print("hacked that out")
+```
 
 
 ## CLI Basic Examples and Combos

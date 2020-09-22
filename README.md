@@ -61,6 +61,23 @@ pip3 install --user --upgrade git+https://github.com/twintproject/twint.git@orig
 ```bash
 pipenv install git+https://github.com/twintproject/twint.git#egg=twint
 ```
+Update:
+
+Changed url for search, updated parser to the new page.
+After the search you can get tweets from "c.search_tweet_list" as a list
+
+timestamps, fav-rt counts does not return with this page but it is the best option for now
+
+example
+
+c = twint.Config()
+c.Search = "yey"
+c.Store_object = True
+c.Limit = 100
+twint.run.Search(c)
+tlist = c.search_tweet_list
+print("hacked that out")
+
 
 ## CLI Basic Examples and Combos
 A few simple examples to help you understand the basics:
